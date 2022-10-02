@@ -1,4 +1,13 @@
 # TPHW_Highload-2
+### # Python. Thread pool. ###
+## Comparison of RPS ##
+Pyhon: (7018)
+
+![image](https://user-images.githubusercontent.com/64084206/193476987-08536747-19f6-45e0-9826-cdefb22c70e2.png)
+
+Nginx: (17390)
+
+![image](https://user-images.githubusercontent.com/64084206/193476999-828db6f5-5dc3-445c-a4e0-53c27def347f.png)
 
 Web server test suite
 =====================
