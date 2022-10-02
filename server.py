@@ -35,7 +35,7 @@ class HTTPWebServer():
         self._dir = dir
         self._cpuPool = []
         self._requestQueue = queue.SimpleQueue()
-        self._badReqHeaders = [('Server', 'Python thread pool server'),
+        self._badReqHeaders = [('Server', 'Python-thread-pool-server'),
                                ('Date', datetime.now()),
                                ('Connection', 'close')]
 
@@ -77,7 +77,7 @@ class HTTPWebServer():
         type, _ = mimetypes.guess_type(filePath, strict=True)
         headers = [('Content-Type', type),
                    ('Content-Length', os.path.getsize(filePath)),
-                   ('Server', 'Python thread pool server'),
+                   ('Server', 'Python-thread-pool-server'),
                    ('Date', datetime.now()),
                    ('Connection', 'close')]
         self.response(conn, HTTPResponse(200, 'OK', headers))
