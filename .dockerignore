@@ -1,0 +1,9 @@
+__pycache__/
+README.md
+tests/
+httptest.py
+nginx.conf
+.git/
+.gitignore
+.gitattributes
+.vscode/
