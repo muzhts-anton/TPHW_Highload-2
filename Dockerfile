@@ -1,10 +1,10 @@
 FROM python:3.8-slim
 
-RUN mkdir /var/www
-RUN mkdir /var/www/html
+# RUN mkdir /var/www
+# RUN mkdir /var/www/html
 
-COPY httpd.conf /etc
-COPY tests /var/www/html
+# COPY httpd.conf /etc
+# COPY tests /var/www/html
 
 WORKDIR /usr/src/app
 

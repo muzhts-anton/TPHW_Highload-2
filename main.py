@@ -3,14 +3,14 @@ from server import HTTPWebServer
 HOST = '0.0.0.0'
 PORT = 80
 DEFAULT_THREADS = 256
-DEFAULT_ROOT_DIR = '/home/anton/Documents/tmp/sem3/TPHW_Highload-2/tests'
+DEFAULT_ROOT_DIR = './tests'
 
 
 def parseConf():
     threads = DEFAULT_THREADS
     root = DEFAULT_ROOT_DIR
     try:
-        f = open('./httpd.conf', 'r')  # path: /etc/httpd.conf in docker
+        f = open('./httpd.conf', 'r')
         parsedFile = f.read().split('\n')
         for text in parsedFile:
             if text.find('thread_limit') > -1:

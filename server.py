@@ -59,7 +59,7 @@ class HTTPWebServer():
                     self._requestQueue.put(conn)
 
             while True:
-                1
+                1 # отвисаем
 
         except KeyboardInterrupt:
             sock.close()

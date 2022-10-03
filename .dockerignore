@@ -1,9 +1,3 @@
 __pycache__/
-README.md
-tests/
-httptest.py
-nginx.conf
+venv/
 .git/
-.gitignore
-.gitattributes
-.vscode/
