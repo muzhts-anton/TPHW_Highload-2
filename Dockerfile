@@ -1,14 +1,11 @@
-FROM python:3.8-slim
+FROM python:3
 
-# RUN mkdir /var/www
-# RUN mkdir /var/www/html
+WORKDIR /app
 
-# COPY httpd.conf /etc
-# COPY tests /var/www/html
+COPY . /app
 
-WORKDIR /usr/src/app
-
-COPY . /usr/src/app
 EXPOSE 80
+
+VOLUME [ "/app/etc" ]
 
 CMD ["python3", "main.py"]
